@@ -1,0 +1,10 @@
+{
+    "NombreAplicacion":"GenCopyCobol",
+    "Version":"0.0.1 beta",
+    "Desarrolladores": ["Alvaro Sanchez Agudo","Javier Cuende Marina"],
+    "Departamento" : "Arquitectura EIT",
+    "DirInput" : "Input",
+    "DirOutput" : "Output",
+    "DirLog" : "LogOut",
+    "ExtensionLog": ".csv"
+}

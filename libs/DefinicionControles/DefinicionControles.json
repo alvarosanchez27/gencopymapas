@@ -6,8 +6,5 @@
         "ClaseDelegada": "ControlTabla",
         "TemplateSalida": "TemplateTabla",
         "esSubControl" : "n"        
-    },
-    {
-        "idControl":"2"
     }
 ]
