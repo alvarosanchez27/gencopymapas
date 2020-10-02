@@ -1,0 +1,9 @@
+[
+    {
+        "idControl":"1",
+        "regext": "^(\\s*)listatabla\\s*"
+    },
+    {
+        "idControl":"2"
+    }
+]
