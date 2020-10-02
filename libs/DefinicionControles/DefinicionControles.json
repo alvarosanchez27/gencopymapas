@@ -1,10 +1,116 @@
 [
     {
-        "IdControl":"3018",
-        "NombreControl":"tabla",
-        "Regex": "^(\\s*)tabla\\s+",
-        "ClaseDelegada": "ControlTabla",
-        "TemplateSalida": "TemplateTabla",
-        "esSubControl" : "n"        
+        "IdControl":"3001",
+        "NombreControl":"boton",
+        "Regex": "^(\\s*)boton\\s+",
+        "ClaseDelegada": "ControlBoton",
+        "TemplateSalida": "TemplateBoton",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3002",
+        "NombreControl":"link",
+        "Regex": "^(\\s*)link\\s+",
+        "ClaseDelegada": "ControlLink",
+        "TemplateSalida": "TemplateLink",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3003",
+        "NombreControl":"check",
+        "Regex": "^(\\s*)check\\s+",
+        "ClaseDelegada": "ControlCheck",
+        "TemplateSalida": "TemplateCheck",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3004",
+        "NombreControl":"radios",
+        "Regex": "^(\\s*)radios\\s+",
+        "ClaseDelegada": "ControlRadios",
+        "TemplateSalida": "TemplateRadios",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3005",
+        "NombreControl":"combo",
+        "Regex": "^(\\s*)combo\\s+",
+        "ClaseDelegada": "ControlCombo",
+        "TemplateSalida": "TemplateCombo",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3007",
+        "NombreControl":"lista",
+        "Regex": "^(\\s*)lista\\s+",
+        "ClaseDelegada": "ControlLista",
+        "TemplateSalida": "TemplateLista",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3008",
+        "NombreControl":"grupo",
+        "Regex": "^(\\s*)grupo\\s+",
+        "ClaseDelegada": "ControlGrupo",
+        "TemplateSalida": "TemplateGrupo",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3009",
+        "NombreControl":"panel",
+        "Regex": "^(\\s*)panel\\s+",
+        "ClaseDelegada": "ControlPanel",
+        "TemplateSalida": "TemplatePanel",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"300e",
+        "NombreControl":"texto",
+        "Regex": "^(\\s*)texto\\s+",
+        "ClaseDelegada": "ControlTexto",
+        "TemplateSalida": "TemplateTexto",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"300f",
+        "NombreControl":"numerico",
+        "Regex": "^(\\s*)numerico\\s+",
+        "ClaseDelegada": "ControlNumerico",
+        "TemplateSalida": "TemplateNumerico",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3010",
+        "NombreControl":"hora",
+        "Regex": "^(\\s*)hora\\s+",
+        "ClaseDelegada": "ControlHora",
+        "TemplateSalida": "TemplateHora",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3011",
+        "NombreControl":"fecha",
+        "Regex": "^(\\s*)fecha\\s+",
+        "ClaseDelegada": "ControlFecha",
+        "TemplateSalida": "TemplateFecha",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3013",
+        "NombreControl":"imagen",
+        "Regex": "^(\\s*)imagen\\s+",
+        "ClaseDelegada": "ControlImagen",
+        "TemplateSalida": "TemplateImagen",
+        "esSubControl" : "n"   
+    },
+    {
+        "IdControl":"3015",
+        "NombreControl":"tileitem",
+        "Regex": "^(\\s*)tileitem\\s+",
+        "ClaseDelegada": "ControlTileItem",
+        "TemplateSalida": "TemplateTileItem",
+        "esSubControl" : "n"   
     }
+    
+    
 ]
