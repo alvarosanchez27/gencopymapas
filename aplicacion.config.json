@@ -1,10 +1,21 @@
 {
     "NombreAplicacion":"GenCopyCobol",
     "Version":"0.0.1 beta",
-    "Desarrolladores": ["Alvaro Sanchez Agudo","Javier Cuende Marina"],
+    "Desarrolladores": 
+    [
+        "Alvaro Sanchez Agudo",
+        "Javier Cuende Marina"
+    ],
     "Departamento" : "Arquitectura EIT",
-    "DirInput" : "Input",
-    "DirOutput" : "Output",
-    "DirLog" : "LogOut",
-    "ExtensionLog": ".csv"
+    "DirInput" : "filesInput",
+    "DirOutput" : "filesOutput",
+    "DirLog" : "logOut",
+    "DirData" : "Data",
+    "FileDefControles": "definicion.controles.json",
+    "FormatoLog": "json",
+    "EscrituraMensajesLog":{
+        "Error":"s",
+        "Aviso":"s",
+        "Informacion":"s"
+    }
 }

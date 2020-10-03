@@ -1,7 +1,7 @@
 import datetime
 from random import randint
 
-class Contexto():
+class ContextModel():
     """
     Clase contexto de la aplicación.
 
@@ -21,13 +21,21 @@ class Contexto():
         self.DirRootApp = DirRootApp
         # Instancia de Configuración de la aplicación.
         self.ConfigApp = ConfigApp
+        # Nombre del usuario que inicia la aplicación.
+        self.User = ""
         # Hora acceso a la aplicación.
         self.FechaAcceso = datetime.datetime.now()
         # Directorio fichero de entrada.
         self.DirFileInput = ""
         # Ruta completa del fichero de entrada.
         self.RutaFileInput = ""
+        # Nombre del fichero de entrada.
+        self.NameFileInput = ""
         # Ruta completa del fichero de salida.
         self.RutaFileOutput = ""
         # Usuario acceso aplicación.
         self.NomUser = ""
+        # Contexto contine la función delegada de la escritura del log de la aplicación.
+        self.escribeLog = None
+        # Contiene los tipo de mensajes manejados por la aplicacion.
+        self.TipoMsg = ""
