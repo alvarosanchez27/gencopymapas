@@ -4,7 +4,7 @@ class ControlModel():
     """
     Clase definición de Control UI de la aplicación.
     """
-    def __init__(self, ID, IDControl, NombreControl,  Nombre, Template, esSubControl):
+    def __init__(self, ID, IDControl, NombreControl,  Nombre, Template, esSubControl, esRaizDOM):
         """
         Constructor del control UI.
         """
@@ -14,6 +14,7 @@ class ControlModel():
         self.Nombre = Nombre
         self.Template = Template
         self.esSubControl = esSubControl
+        self.esRaizDOM = esRaizDOM
         self.LineasOriginalesFileXAML =  list()
         self.listaPropiedades = list()
 
@@ -28,6 +29,7 @@ class ControlModel():
             "NombreControl" : self.NombreControl,
             "Template" : self.Template,
             "esSubControl": self.esSubControl,
+            "esRaizDOM": self.esRaizDOM,
             "LineasOriginales" : self.LineasOriginalesFileXAML ,
             "listaPropiedades" : self.listaPropiedades 
         }

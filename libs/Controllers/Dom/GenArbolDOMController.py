@@ -58,7 +58,9 @@ class GenArbolDOMController():
             for itemDefControles in DiccionarioCtrls:
                 PatronIdentificaControl = re.compile(itemDefControles['Regex'],flags=re.I)
                 if PatronIdentificaControl.search(linea):
-                    return ControlModel('1', itemDefControles['IdControl'], itemDefControles['NombreControl'],  'Nombre', itemDefControles['TemplateSalida'], itemDefControles['esSubControl'])
+                    esSubControlBool = itemDefControles['esSubControl'].lower() == 's'
+                    esRaizDOMBool =  itemDefControles['esRaizDOM'].lower() == 's'
+                    return ControlModel('1', itemDefControles['IdControl'], itemDefControles['NombreControl'],  'Nombre', itemDefControles['TemplateSalida'], esSubControlBool , esRaizDOMBool)
             return ControlActual
         except Exception as e:
             self.Contexto.escribeLog(__class__.__name__,self.Contexto.TipoMsg.ERROR, "Error en creacion de Control desde linea de fichero!!!  {} ".format(str(e)))
