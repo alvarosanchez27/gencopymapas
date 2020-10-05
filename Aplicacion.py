@@ -22,3 +22,4 @@ class Aplicacion():
         # Se llama a la generación del árbol DOM.
         genArbolControlador = GenArbolDOMController(self.Contexto)
         ArbolDomGenerado = genArbolControlador.generaArbol()
+        print(ArbolDomGenerado.getJSON())

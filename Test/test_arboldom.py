@@ -13,7 +13,7 @@ class TestArbolDOM(unittest.TestCase):
         Validación de instanciación distinta de None del NodoRaiz.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','Pantalla1','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','Pantalla1','Pantalla.template',False))
         ArbolTmp = ArbolDom(NodoRaiz)
         self.assertTrue(ArbolTmp!=None)
     
@@ -24,7 +24,7 @@ class TestArbolDOM(unittest.TestCase):
         Validación de instanciación distinta de Nodo buscado.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','Pantalla1','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','Pantalla1','Pantalla.template',False))
         ArbolTmp = ArbolDom(NodoRaiz)
         self.assertTrue(ArbolTmp.buscaNodoControl(1)!=None)
 
@@ -36,7 +36,7 @@ class TestArbolDOM(unittest.TestCase):
         buscamos por identificador.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',False))
         ArbolTmp = ArbolDom(NodoRaiz)
         self.assertEqual(ArbolTmp.buscaNodoControl(1).Control.Nombre,'PantallaPrueba')
 
@@ -47,9 +47,9 @@ class TestArbolDOM(unittest.TestCase):
         Se valida que el Nodo hijo insertado, se encuentra dentro del árbol.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',False))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo = NodoControlModel(ControlModel(2,2,'Boton','Boton1','Boton.template',list()))
+        NodoHijo = NodoControlModel(ControlModel(2,2,'Boton','Boton1','Boton.template',False))
         # Creamos el árbol con un NodoRaiz
         ArbolTmp = ArbolDom(NodoRaiz)
         # Se agrega el control hijo
@@ -63,13 +63,13 @@ class TestArbolDOM(unittest.TestCase):
         Se realiza la búsqueda de un Nodo que se encuentra en profundidad Nivel 2
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',False))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo = NodoControlModel(ControlModel(2,2,'Lista','Lista1','Lista.template',list()))
-        NodoHijo2 = NodoControlModel(ControlModel(3,3,'Boton','Boton1','Boton.template',list()))
+        NodoHijo = NodoControlModel(ControlModel(2,2,'Lista','Lista1','Lista.template',False))
+        NodoHijo2 = NodoControlModel(ControlModel(3,3,'Boton','Boton1','Boton.template',True))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo3 = NodoControlModel(ControlModel(4,4,'Lista','Lista2','Lista.template',list()))
-        NodoHijo4 = NodoControlModel(ControlModel(5,5,'Boton','Boton2','Boton.template',list()))
+        NodoHijo3 = NodoControlModel(ControlModel(4,4,'Lista','Lista2','Lista.template',False))
+        NodoHijo4 = NodoControlModel(ControlModel(5,5,'Boton','Boton2','Boton.template',True))
         # Creamos el árbol con un NodoRaiz
         ArbolTmp = ArbolDom(NodoRaiz)
         # Se agrega el control hijo
@@ -86,9 +86,9 @@ class TestArbolDOM(unittest.TestCase):
         Se comprueba que la longitud de la lista obtenida es igual al ńumero de nodos del árbol.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',False))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo = NodoControlModel(ControlModel(2,2,'Boton','Boton1','Boton.template',list()))
+        NodoHijo = NodoControlModel(ControlModel(2,2,'Boton','Boton1','Boton.template',False))
         # Creamos el árbol con un NodoRaiz
         ArbolTmp = ArbolDom(NodoRaiz)
         # Se agrega el control hijo
@@ -103,13 +103,13 @@ class TestArbolDOM(unittest.TestCase):
         Se comprueba que la longitud de la lista obtenida es igual al ńumero de nodos del árbol.
         """
         # Creamos el control que es el NodoRaiz
-        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',list()))
+        NodoRaiz = NodoControlModel(ControlModel(1,1,'Pantalla','PantallaPrueba','Pantalla.template',False))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo = NodoControlModel(ControlModel(2,2,'Lista','Lista1','Lista.template',list()))
-        NodoHijo2 = NodoControlModel(ControlModel(3,3,'Boton','Boton1','Boton.template',list()))
+        NodoHijo = NodoControlModel(ControlModel(2,2,'Lista','Lista1','Lista.template',False))
+        NodoHijo2 = NodoControlModel(ControlModel(3,3,'Boton','Boton1','Boton.template',True))
         # Creamos el control que será el nodo hijo de nodo raiz
-        NodoHijo3 = NodoControlModel(ControlModel(4,4,'Lista','Lista2','Lista.template',list()))
-        NodoHijo4 = NodoControlModel(ControlModel(5,5,'Boton','Boton2','Boton.template',list()))
+        NodoHijo3 = NodoControlModel(ControlModel(4,4,'Lista','Lista2','Lista.template',False))
+        NodoHijo4 = NodoControlModel(ControlModel(5,5,'Boton','Boton2','Boton.template',True))
         # Creamos el árbol con un NodoRaiz
         ArbolTmp = ArbolDom(NodoRaiz)
         # Se agrega el control hijo

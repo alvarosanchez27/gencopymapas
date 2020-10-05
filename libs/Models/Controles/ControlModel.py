@@ -4,7 +4,7 @@ class ControlModel():
     """
     Clase definición de Control UI de la aplicación.
     """
-    def __init__(self, ID, IDControl, NombreControl,  Nombre, Template, LineasOriginalesFileXAML):
+    def __init__(self, ID, IDControl, NombreControl,  Nombre, Template, esSubControl):
         """
         Constructor del control UI.
         """
@@ -13,7 +13,8 @@ class ControlModel():
         self.NombreControl = NombreControl
         self.Nombre = Nombre
         self.Template = Template
-        self.LineasOriginalesFileXAML =  LineasOriginalesFileXAML
+        self.esSubControl = esSubControl
+        self.LineasOriginalesFileXAML =  list()
         self.listaPropiedades = list()
 
     def getJSON(self):
@@ -26,6 +27,7 @@ class ControlModel():
             "IDControl" : self.IDControl,
             "NombreControl" : self.NombreControl,
             "Template" : self.Template,
+            "esSubControl": self.esSubControl,
             "LineasOriginales" : self.LineasOriginalesFileXAML ,
             "listaPropiedades" : self.listaPropiedades 
         }
