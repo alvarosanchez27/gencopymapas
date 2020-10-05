@@ -1,122 +1,282 @@
 [
     {
         "IdControl":"1",
-        "NombreControl":"pantalla",
-        "Regex": "^(\\s*)pantalla\\s+",
+        "TipoControl":"pantalla",
+        "Regex": "^(\\s*)pantalla(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "",
         "esSubControl" : "n",
-        "esRaizDOM" : "s"   
+        "esRaizDOM" : "s",  
+        "propiedadesDefault":[] 
     },
     {
         "IdControl":"3001",
-        "NombreControl":"boton",
-        "Regex": "^(\\s*)boton\\s+",
+        "TipoControl":"boton",
+        "Regex": "^(\\s*)boton(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateBoton",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[] 
     },
     {
         "IdControl":"3002",
-        "NombreControl":"link",
-        "Regex": "^(\\s*)link\\s+",
+        "TipoControl":"link",
+        "Regex": "^(\\s*)link(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateLink",
         "esSubControl" : "n",
-        "esRaizDOM" : "n" 
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3003",
-        "NombreControl":"check",
-        "Regex": "^(\\s*)check\\s+",
+        "TipoControl":"check",
+        "Regex": "^(\\s*)check(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateCheck",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n"   ,
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3004",
-        "NombreControl":"radios",
-        "Regex": "^(\\s*)radios\\s+",
+        "TipoControl":"radios",
+        "Regex": "^(\\s*)radios(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateRadios",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n"   ,
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3005",
-        "NombreControl":"combo",
-        "Regex": "^(\\s*)combo\\s+",
+        "TipoControl":"combo",
+        "Regex": "^(\\s*)combo(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateCombo",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n"   ,
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3007",
-        "NombreControl":"lista",
-        "Regex": "^(\\s*)lista\\s+",
+        "TipoControl":"lista",
+        "Regex": "^(\\s*)lista(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateLista",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n"   ,
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3008",
-        "NombreControl":"grupo",
-        "Regex": "^(\\s*)grupo\\s+",
+        "TipoControl":"grupo",
+        "Regex": "^(\\s*)grupo(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateGrupo",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"3009",
-        "NombreControl":"panel",
-        "Regex": "^(\\s*)panel\\s+",
+        "TipoControl":"panel",
+        "Regex": "^(\\s*)panel(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplatePanel",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"  
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"300e",
-        "NombreControl":"texto",
-        "Regex": "^(\\s*)texto\\s+",
+        "TipoControl":"texto",
+        "Regex": "^(\\s*)texto(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateTexto",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]
     },
     {
         "IdControl":"300f",
-        "NombreControl":"numerico",
-        "Regex": "^(\\s*)numerico\\s+",
+        "TipoControl":"numerico",
+        "Regex": "^(\\s*)numerico(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateNumerico",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]   
     },
     {
         "IdControl":"3010",
-        "NombreControl":"hora",
-        "Regex": "^(\\s*)hora\\s+",
+        "TipoControl":"hora",
+        "Regex": "^(\\s*)hora(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateHora",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]   
     },
     {
         "IdControl":"3011",
-        "NombreControl":"fecha",
-        "Regex": "^(\\s*)fecha\\s+",
+        "TipoControl":"fecha",
+        "Regex": "^(\\s*)fecha(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateFecha",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]   
     },
     {
         "IdControl":"3013",
-        "NombreControl":"imagen",
-        "Regex": "^(\\s*)imagen\\s+",
+        "TipoControl":"imagen",
+        "Regex": "^(\\s*)imagen(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateImagen",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"   
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]   
     },
     {
         "IdControl":"3015",
-        "NombreControl":"tileitem",
-        "Regex": "^(\\s*)tileitem\\s+",
+        "TipoControl":"tileitem",
+        "Regex": "^(\\s*)tileitem(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
         "TemplateSalida": "TemplateTileItem",
         "esSubControl" : "n",
-        "esRaizDOM" : "n"  
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3015",
+        "TipoControl":"ltabla",
+        "Regex": "^(\\s*)ltabla(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
+        "TemplateSalida": "TemplateLTabla",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3022",
+        "TipoControl":"bordeeit",
+        "Regex": "^(\\s*)bordeeit(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",
+        "TemplateSalida": "TemplateBordeEit",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3020",
+        "TipoControl":"arboleit",
+        "Regex": "^(\\s*)tablaarboleit(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateArbolEit",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3017",
+        "TipoControl":"expander",
+        "Regex": "^(\\s*)expander(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateExpander",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3026",
+        "TipoControl":"grafico",
+        "Regex": "^(\\s*)grafico(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateGrafico",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3028",
+        "TipoControl":"panelbar",
+        "Regex": "^(\\s*)panel(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplatePanelBar",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3029",
+        "TipoControl":"organigrama",
+        "Regex": "^(\\s*)organigrama(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateOrganigrama",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"302A",
+        "TipoControl":"pivotEIT",
+        "Regex": "^(\\s*)pivot(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplatePivotEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"302B",
+        "TipoControl":"tartaEIT",
+        "Regex": "^(\\s*)tarta(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateTartaEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"302C",
+        "TipoControl":"polar",
+        "Regex": "^(\\s*)polar(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplatePolar",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"302E",
+        "TipoControl":"mensajeEIT",
+        "Regex": "^(\\s*)mensaje(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateMensajeEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3030",
+        "TipoControl":"tgrid",
+        "Regex": "^(\\s*)tgrid(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateTgrid",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3030",
+        "TipoControl":"tgrid",
+        "Regex": "^(\\s*)tgrid(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateTgrid",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3034",
+        "TipoControl":"listAarbolEIT",
+        "Regex": "^(\\s*)listaarbol(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateListaArbolEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3035",
+        "TipoControl":"aComboEIT",
+        "Regex": "^(\\s*)acombo(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplateAcomboEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
+    },
+    {
+        "IdControl":"3035",
+        "TipoControl":"PNGridEIT",
+        "Regex": "^(\\s*)pngrid(\\s*=\\s*\\b(\\w|=)+\\b|\\s+)",   
+        "TemplateSalida": "TemplatePNGridEIT",
+        "esSubControl" : "n",
+        "esRaizDOM" : "n",
+        "propiedadesDefault":[]  
     }
 ]
+
