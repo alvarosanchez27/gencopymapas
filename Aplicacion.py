@@ -21,5 +21,5 @@ class Aplicacion():
         self.Contexto.escribeLog(__class__.__name__,self.Contexto.TipoMsg.INFORMACION, "Generacion de copy Cobol con origen file: {}".format(self.Contexto.RutaFileInput))
         # Se llama a la generación del árbol DOM.
         genArbolControlador = GenArbolDOMController(self.Contexto)
-        ArbolDomGenerado = genArbolControlador.generaArbol()
+        ArbolDomGenerado = genArbolControlador.generaArbolDOM()
         print(ArbolDomGenerado.getJSON())

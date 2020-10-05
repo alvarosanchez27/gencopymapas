@@ -1,3 +1,18 @@
-    pantalla xpcp101
-    Boton prueba1
-    lon=21
+ pantalla xmant262
+   pngrid GRIDBARRA idx=2
+   boton ANTERIOR idx=4
+      fkey=03
+   boton ACEPTAR idx=7
+      fkey=00
+   mensaje MENSAJE idx=8
+      lon=255
+   lista MP idx=11
+      oc=15
+      pag=10
+      numcabs=3
+      txt=COD idx=12
+      lon=3
+      txt=ESP idx=13
+      lon=2
+      txt=TEXTO idx=14
+      lon=50
