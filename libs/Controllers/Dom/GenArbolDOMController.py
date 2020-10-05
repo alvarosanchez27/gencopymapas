@@ -93,7 +93,7 @@ class GenArbolDOMController():
                         else:
                             self.Contexto.escribeLog(__class__.__name__,self.Contexto.TipoMsg.ERROR, "Error!!! No se ha encontrado el idx para el control: {} tipoControl: {}".format(NombreCtrl,itemDefControles['TipoControl']))
                             raise Exception("Error!!! No se ha encontrado el idx para el control: {} tipoControl: {}".format(NombreCtrl,itemDefControles['TipoControl']))
-                    return ControlModel(IDX, itemDefControles['IdControl'], itemDefControles['TipoControl'],  NombreCtrl , itemDefControles['TemplateSalida'], esSubControlBool , esRaizDOMBool, itemDefControles['PropiedadesDefault'])
+                    return ControlModel(IDX, itemDefControles['IdControl'], itemDefControles['TipoControl'],  NombreCtrl , itemDefControles['TemplateSalida'], esSubControlBool , esRaizDOMBool, itemDefControles['propiedadesDefault'])
             return ControlActual
         except Exception as e:
             self.Contexto.escribeLog(__class__.__name__,self.Contexto.TipoMsg.ERROR, "Error en creacion de Control desde linea de fichero!!!  {} ".format(str(e)))
