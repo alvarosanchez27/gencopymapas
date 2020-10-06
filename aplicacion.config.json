@@ -12,7 +12,7 @@
     "DirLog" : "logOut",
     "DirData" : "Data",
     "FileDefControles": "definicion.controles.json",
-    "FormatoLog": "json",
+    "FormatoLog": "csv",
     "EscrituraMensajesLog":{
         "Error":"s",
         "Aviso":"s",
